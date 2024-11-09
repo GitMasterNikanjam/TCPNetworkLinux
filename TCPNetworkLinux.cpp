@@ -360,7 +360,7 @@ bool TCPServer::write(const char &txBuffer, const size_t &txSize)
                     return false;
                 }
             } 
-            else if (bytesWrite < txSize) 
+            else if (bytesWrite < (int)txSize) 
             {
                 errorMessage = "TCPServer error: Partial write. Not all data was sent.";
                 return false;
