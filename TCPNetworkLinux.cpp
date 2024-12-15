@@ -146,7 +146,7 @@ bool TCPServer::startByIP(const uint16_t port, const char* ip)
 bool TCPServer::startByName(const uint16_t port, const char* InterfaceName)
 {
     _ip = TCPNetworkLinuxNamespace::getIPAddressByInterface(InterfaceName);
-    std::cout << _ip << std::endl;
+
     if(_ip == "")
     {
         errorMessage = "TCPServer error: Invalid interface ethernet name.";

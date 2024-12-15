@@ -1,5 +1,9 @@
-// For compile: g++ -o TCPServer_test TCPServer_test.cpp ../TCPNetworkLinux.cpp
-// For run: sudo ./TCPServer_test
+/*
+For compile: 
+mkdir -p ./bin && g++ -o ./bin/TCPServer_test TCPServer_test.cpp ../TCPNetworkLinux.cpp
+For run: 
+sudo ./bin/TCPServer_test
+*/
 // ##################################################
 // Include libraries
 
@@ -19,7 +23,7 @@ TCPServer server;
 
 int serverPort = 8080;                       // Port number on which the server listens
 const char *server_ip = "192.168.137.98";    // IP address on which the server listens.. Replace with your interface's IP address
-const char *server_portName = "eth0";       
+const char *server_portName = "eno1";       
 
 int i;
 
